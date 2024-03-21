@@ -8,3 +8,14 @@ body {
   background-color: #000000;
   font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Hide the scrollbar but maintain functionality for WebKit browsers */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: hide scrollbar track */
+}
+
+/* Optional: Style scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Optional: hide scrollbar track */
+}

@@ -4,12 +4,12 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
