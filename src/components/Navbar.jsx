@@ -4,13 +4,13 @@ import { UserAuth } from "../context/AuthContext";
 
 const Navbar = () => {
   const { user, logOut } = UserAuth();
+  // console.log(user.email);
   const navigate = useNavigate();
-  console.log("User Email: "+user.email);
 
   const handleLogout = async () => {
     try {
       await logOut();
-      navigate('/');
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
